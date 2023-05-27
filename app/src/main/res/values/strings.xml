@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Taskkeeper</string>
+    <string name="app_info">An extensive (somewhat) task manager</string>
+
+    <string name="task_activity_title">Tasks</string>
+    <string name="task_tab_today">Today</string>
+    <string name="task_tab_tomorrow">Tomorrow</string>
+    <string name="task_tab_overmorrow">Overmorrow</string>
+
+    <!-- actions -->
+    <string name="task_delete">Delete</string>
+    <string name="task_edit">Edit</string>
+    <string name="task_mark_as_done">Mark as done</string>
+    <string name="task_mark_as_not_done">Mark as not done</string>
+    <string name="task_save">Save</string>
+
+    <!-- attributes -->
+    <string name="task_done">Done</string>
+    <string name="task_not_done">Not done</string>
+    <string name="task_date_none">None</string>
+    <string name="task_date_today">Today</string>
+    <string name="task_date_tomorrow">Tomorrow</string>
+    <string name="task_priority_low">Low priority</string>
+    <string name="task_priority_middle">Medium priority</string>
+    <string name="task_priority_high">High priority</string>
+
+    <string name="task_no_tasks">No tasks</string>
+    <string name="project_no_projects">No projects</string>
+
+    <string name="task_edit_title">Edit task</string>
+    <string name="task_edit_name_hint">Name</string>
+    <string name="task_edit_info_hint">Notes</string>
+    <string name="task_edit_priority_hint">Priority</string>
+    <string name="task_edit_project_hint">Projects</string>
+    <string name="task_new_shortcut_label_short">New Task</string>
+
+    <string name="task_snackbar_marked_done">Task marked done</string>
+    <string name="task_snackbar_marked_not_done">Task marked not done</string>
+    <string name="task_snackbar_deleted">Task deleted</string>
+
+    <string name="project_done">%1$d / %2$d done</string>
+
+    <string name="project_activity_title">Projects</string>
+    <string name="project_shortcut_label_short">Projects</string>
+
+    <string name="generic_error">Something went wrong</string>
+    <string name="error_cant_find_task">Can\'t find task</string>
+    <string name="error_task_name_missing">Task has no name</string>
+    <string name="error_task_save">Can\'t save task</string>
+    <string name="error_task_priority_not_a_number">Priority isn\'t a number</string>
+
+    <string name="dialog_dismiss">OK</string>
+    <string name="dialog_leave_title">Leave?</string>
+    <string name="dialog_leave_message">Changes won\'t be saved</string>
+    <string name="dialog_leave_button_leave">Leave</string>
+    <string name="dialog_leave_button_stay">Stay</string>
+
+    <string name="dialog_projectpicker_title">Open project</string>
+
+    <string name="dialog_delete_title">Delete task?</string>
+    <string name="dialog_delete_message">This can\'t be undone</string>
+    <string name="dialog_delete_button_delete">Delete</string>
+    <string name="dialog_button_cancel">Cancel</string>
+
+    <string name="about_activity_title">Help</string>
+    <string name="about_about_label">About</string>
+    <string name="about_website_item">Source code</string>
+    <string name="about_contact_label">Contact</string>
+    <string name="about_feedback_item">Send feedback</string>
+</resources>

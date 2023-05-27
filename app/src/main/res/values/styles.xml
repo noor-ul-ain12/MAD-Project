@@ -1,0 +1,46 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="TaskTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TaskTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="TaskActivityTheme" parent="TaskTheme">
+        <item name="android:windowTitleSize">?actionBarSize</item>
+        <item name="android:windowTitleStyle">@style/TaskActivityTheme.WindowTitleText</item>
+        <item name="android:windowTitleBackgroundStyle">@style/TaskActivityTheme.WindowTitleBackground</item>
+        <item name="android:windowNoTitle">false</item>
+    </style>
+
+    <style name="TaskActivityTheme.WindowTitleBackground">
+        <item name="android:background">?colorPrimary</item>
+    </style>
+
+    <style name="TaskActivityTheme.WindowTitleText">
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/transparent</item>
+    </style>
+
+    <style name="AboutTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActionBar">true</item>
+    </style>
+
+    <style name="ProjectTheme" parent="TaskTheme">
+        <item name="colorPrimary">#00BCD4</item>
+        <item name="colorPrimaryDark">#0097A7</item>
+    </style>
+
+    <style name="ProjectActivityTheme" parent="TaskActivityTheme">
+        <item name="colorPrimary">#00BCD4</item>
+        <item name="colorPrimaryDark">#0097A7</item>
+    </style>
+
+    <style name="ProjectTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+</resources>

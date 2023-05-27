@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.gitlab.allenb1.todolist"
+    android:versionCode="5"
+    android:versionName="1.2.1">
+
+    <uses-sdk android:minSdkVersion="21"
+        android:targetSdkVersion="27" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/TaskTheme">
+        <activity
+            android:theme="@style/TaskActivityTheme"
+            android:name=".TaskActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+        </activity>
+        <activity
+            android:windowSoftInputMode="adjustResize"
+            android:name=".TaskEditActivity"
+            android:exported="true"
+            android:label="@string/task_edit_title"
+            android:noHistory="true"
+            android:parentActivityName=".TaskActivity" />
+        <activity
+            android:name=".TaskViewActivity"
+            android:parentActivityName=".TaskActivity" />
+        <activity
+            android:name=".ProjectActivity"
+            android:label="@string/project_activity_title"
+            android:theme="@style/ProjectActivityTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProjectViewActivity"
+            android:theme="@style/ProjectTheme"
+            android:parentActivityName=".ProjectActivity" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/about_activity_title"
+            android:theme="@style/AboutTheme"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="content_keyline">80dp</dimen>
+    <dimen name="content_keyline_edittext">76dp</dimen>
+    <dimen name="horizontal_margins">24dp</dimen>
+    <dimen name="minifab_margin">16dp</dimen>
+    <dimen name="toolbar_prominent_height">136dp</dimen>
+    <dimen name="toolbar_prominent_height_and_padding">152dp</dimen>
+
+</resources>

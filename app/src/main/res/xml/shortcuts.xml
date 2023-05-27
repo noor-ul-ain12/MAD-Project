@@ -1,0 +1,14 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- todo: new icons -->
+    <shortcut
+        android:shortcutId="projects"
+        android:enabled="true"
+        android:icon="@drawable/ic_label_black"
+        android:shortcutShortLabel="@string/project_shortcut_label_short">
+        <intent android:action="android.intent.action.PICK"
+            android:targetPackage="io.gitlab.allenb1.todolist"
+            android:targetClass="io.gitlab.allenb1.todolist.ProjectActivity" />
+    </shortcut>
+
+</shortcuts>

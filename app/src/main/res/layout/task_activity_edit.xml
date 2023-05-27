@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/TaskTheme"
+    tools:context="io.gitlab.allenb1.todolist.TaskEditActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/TaskTheme.AppBarOverlay">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/task_name_text"
+            android:theme="@style/Base.V7.Widget.AppCompat.EditText"
+            android:hint="@string/task_edit_name_hint"
+            android:layout_gravity="center_vertical"
+            android:inputType="text" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <!-- TODO: Custom keyboard button for 'Done' -->
+
+    <FrameLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/task_priority_item"
+        android:background="?attr/selectableItemBackground">
+        <ImageView
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_marginStart="@dimen/horizontal_margins"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+
+            android:src="@drawable/ic_sort_black"
+            android:id="@+id/task_priority_icon" />
+        <EditText
+            android:inputType="number"
+            android:hint="@string/task_edit_priority_hint"
+            android:id="@+id/task_priority_number"
+            android:text="0"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="@dimen/content_keyline_edittext"
+            android:layout_marginEnd="@dimen/horizontal_margins"
+            android:gravity="bottom"
+
+            android:textColor="#000"
+            android:textAppearance="?attr/textAppearanceListItem" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/task_date_item"
+        android:background="?attr/selectableItemBackground">
+
+        <ImageView
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_marginStart="@dimen/horizontal_margins"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+
+            android:src="@drawable/ic_clock_black"
+            android:id="@+id/task_date_icon" />
+        <TextView
+            android:id="@+id/task_date_text"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="@dimen/content_keyline"
+            android:layout_marginEnd="@dimen/horizontal_margins"
+            android:gravity="bottom"
+
+            android:text="@string/task_date_none"
+            android:textAppearance="?attr/textAppearanceListItem" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/task_info_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground">
+        <ImageView
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_marginStart="@dimen/horizontal_margins"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+
+            android:src="@drawable/ic_subject_black"/>
+        <EditText
+            android:id="@+id/task_info_text"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="@dimen/content_keyline_edittext"
+            android:layout_marginEnd="@dimen/horizontal_margins"
+            android:gravity="bottom"
+
+            android:hint="@string/task_edit_info_hint"
+            android:inputType="textMultiLine"
+            android:textAppearance="?attr/textAppearanceListItem" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/task_project_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground">
+        <ImageView
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_marginStart="@dimen/horizontal_margins"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+
+            android:src="@drawable/ic_label_black"/>
+        <EditText
+            android:id="@+id/task_project_text"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="@dimen/content_keyline_edittext"
+            android:layout_marginEnd="@dimen/horizontal_margins"
+            android:gravity="bottom"
+
+            android:hint="@string/task_edit_project_hint"
+            android:inputType="textMultiLine"
+            android:textAppearance="?attr/textAppearanceListItem" />
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_done"
+        android:title="@string/task_save"
+        android:icon="@drawable/ic_done_white"
+        app:showAsAction="always" />
+
+</menu>

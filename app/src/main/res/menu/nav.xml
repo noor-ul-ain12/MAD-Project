@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single" android:id="@+id/drawer_g1">
+        <item
+            android:id="@+id/drawer_tasks"
+            android:title="@string/task_activity_title" />
+        <item
+            android:id="@+id/drawer_projects"
+            android:title="@string/project_activity_title" />
+    </group>
+    <group android:checkableBehavior="none" android:id="@+id/drawer_g2">
+        <item
+            android:id="@+id/drawer_about"
+            android:title="@string/about_activity_title" />
+    </group>
+</menu>

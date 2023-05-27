@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="fab_margin">@dimen/horizontal_margins</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+
+    <dimen name="content_keyline">72dp</dimen>
+    <dimen name="content_keyline_edittext">68dp</dimen>
+    <dimen name="horizontal_margins">16dp</dimen>
+    <dimen name="minifab_margin">8dp</dimen>
+    <dimen name="icon_size">24dp</dimen>
+    <dimen name="toolbar_prominent_height">128dp</dimen>
+    <dimen name="toolbar_prominent_height_and_padding">144dp</dimen>
+</resources>
